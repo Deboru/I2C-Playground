@@ -2,7 +2,7 @@
 
 Small repository to document different uses of I2C GPIO pins. Purely educational for the purpose of learning how to configure and use I2C and to learn their difference with normal Arduino pins.
 
->Challenge 1: Input pins
+>Challenge 1: Input pins<
 Goal:
 <br />	Treating IOA as input (via pushbutton or other means),
 <br />  Turn IOB output LED on when a push is detected via read() functionality
