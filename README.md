@@ -1,9 +1,9 @@
-# I2C-Playground\
+# I2C-Playground
 
-Small repository to document different uses of I2C GPIO pins. Purely educational for the purpose of learning how to configure and use I2C and to learn their difference with normal Arduino pins.\
+Small repository to document different uses of I2C GPIO pins. Purely educational for the purpose of learning how to configure and use I2C and to learn their difference with normal Arduino pins.
 
->Challenge 1: Input pins\
-Goal:\
+>Challenge 1: Input pins
+Goal:
 <br />	Treating IOA as input (via pushbutton or other means),
 <br />  Turn IOB output LED on when a push is detected via read() functionality
 <br />  base code taken from-> https://github.com/adafruit/Adafruit_Learning_System_Guides/blob/master/Adafruit_DS2413/DS2413/DS2413.ino\
