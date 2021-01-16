@@ -9,7 +9,7 @@ Treating IOA as input (via pushbutton or other means),\
 Turn IOB output LED on when a push is detected via read() functionality\
 base code taken from-> https://github.com/adafruit/Adafruit_Learning_System_Guides/blob/master/Adafruit_DS2413/DS2413/DS2413.ino
 
->Material:\
+Material:\
 \
 Adafruit DS2413\
 Arduino Uno\
