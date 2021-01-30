@@ -109,7 +109,6 @@ void loop(void)
   bool ok = false;
   ok = write(0x2);
   if (!ok) Serial.println(F("Wire failed"));
-  delay(1000);
   /* Read */
   const int IOA = 0x1;
   //const int IOB = 0x2;
@@ -119,25 +118,25 @@ void loop(void)
     Serial.println(F("Failed reading the DS2413"));
   else
   {
-    if(state & IOA)
+      Serial.println(state);
+    if((state & IOA) == IOA)
     {
       Serial.println(F("Read a push"));
       /* Write */
-      bool ok = false;
+      //bool ok = false;
   
-      ok = write(state & B11111101);
+      ok = write(0x0);
       if (!ok) Serial.println(F("Wire failed"));
-      delay(1000);
+      //delay(1000);
     }
     else
     {
       Serial.println(F("Didn't read a push"));
       /* Write */
-      bool ok = false;
+      //bool ok = false;
       
       ok = write(state | B00000010);
       if (!ok) Serial.println(F("Wire failed"));
-      delay(1000);
     }
   }
   
